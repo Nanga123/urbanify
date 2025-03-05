@@ -1,0 +1,86 @@
+//1
+#include <stdio.h>
+int main()
+{
+	int n;
+	printf("enter number of units");
+	scanf("%d",&n);
+	for(int i=1;i<=(n+1)/2;i++){
+		for(int j=n/2;j>=i;j--){
+		printf(" ");
+		}
+		for(int k=1;k<=i*2-1;k++){
+		 
+		printf("%d",k);
+		
+		}
+		printf("\n");
+		}
+}
+//2
+#include <stdio.h>
+int main()
+{
+	int i,n,sum=0,prod=1;
+	printf("enter number of numbers:");
+	scanf("%d",&n);
+	printf("enter the numbers");
+	int a[n];
+	for (i=0;i<n;i++)
+	{
+	 
+
+
+//3
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("enter 3 sides");
+	scanf("%d,%d,%d",&a,&b,&c);
+	int d,e,f;
+	printf("enter 3 angles");
+	scanf("%d,%d,%d",&d,&e,&f);
+	if(a==b && b==c){
+	printf("equilateral");
+	}
+	else if(a==b || a==c || c==b){
+	printf("isosceles");
+	}
+	else{
+	printf("scalene");
+	}
+	printf("\n");
+	if(d>90 || e>90 || f>90){
+	printf("obtuse");
+	}
+	else if(d==90 || e==90 || f==90){
+	printf("right-angle");
+	}
+	else{
+	printf("acute");
+	}
+	
+}
+
+
+//4
+#include <stdio.h>
+int main()
+{
+	int n;
+	printf("enter a number");
+	scanf("%d",&n);
+	int s=0;
+	while(n!=0){
+		int d=n%10;
+		if(d==2 || d==3 || d==5 || d==7){
+	
+		s=s+d;
+		
+	}
+	n=n/10;
+	}
+	printf("%d",s);
+return 0;
+}
